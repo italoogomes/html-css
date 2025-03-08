@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas</title>
+</head>
+
+<body>
+    <h1>Página de músicas</h1>
+    <hr>
+    <p>Segue abaixo a nossa playlist:</p>
+    <ol>
+        <li>Músicas gospel</li>
+        <br>
+        <ul type="square">
+            <li><strong>Me Ama (Ao Vivo)</strong> - <small>Ana Paula Valadão e Isaque Valadão Bessa.</small></li>
+            <audio preload="metadata" controls>
+                <source src="midia/MeAma.mp3" type="audio/mpeg">
+            </audio>
+
+            <li><strong>Escape</strong> - <small>Renascer Praise</small></li>
+            <audio preload="metadata" controls>
+                <source src="midia/Escape.mp3" type="audio/mpeg">
+            </audio>
+
+            <li><strong>Algo Novo</strong> - <small>Jeyzer Maia feat. Jairo Bonfim (Cover) Kemuel feat. Lukas
+                    Agustinho</small></li>
+            <audio preload="metadata" controls>
+                <source src="midia/AlgoNovo.mp3" type="audio/mpeg">
+            </audio>
+
+            <li><strong>Ninguém Explica Deus</strong> - <small>(feat. Gabriela Rocha) (Ao Vivo)</small></li>
+            <audio preload="metadata" controls>
+                <source src="midia/NinguemExplicaDeus.mp3" type="audio/mpeg">
+            </audio>
+        </ul>
+    </ol>
+    <p><a href="pratica.html" target="_self" rel="prev">Clique aqui para voltar</a></p>
+
+    <script>
+        // Seleciona todos os elementos <audio> da página
+        const audios = document.querySelectorAll('audio');
+
+        audios.forEach(audio => {
+            audio.addEventListener('play', () => {
+                // Pausa os outros áudios ao iniciar um novo
+                audios.forEach(otherAudio => {
+                    if (otherAudio !== audio) {
+                        otherAudio.pause();
+                        otherAudio.currentTime = 0; // Reinicia o áudio pausado
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

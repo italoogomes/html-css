@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div>p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgb(140, 140, 140);
+}
+
+li {
+    text-shadow: 1px 1px 2px rgb(140, 140, 140);
+}
+
+li>p {
+    display: none;
+}
+
+li:hover>p {
+    display: block;
+    font-weight: bold;
+    /* background-color: red; */
+    color: white;
+    width: 1000px;
+}
+
+li:hover {
+    color: black;
+    font-weight: bold;
+}
