@@ -17,75 +17,64 @@
 }
 
 body {
-    background-image: url(imagens/fundo.jpg);
-    font-family: var(--fontepadrao);
-    background-color: var(--cor03);
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9f4;
+  color: #333;
 }
 
-.img01 {
-    background-image: url(imagens/fotog.jpg);
-    display: block;
-    width: 800px;
-    height: 220px;
-    /* margin: 35px auto; */
+header {
+  background-color: #3cb371;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
 }
 
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    text-align: center;
+main {
+  width: 200px;
+  height: 400px;
+  background-color: #d53e68;
+
 }
 
-h1 {
-    font-family: var(--fonte);
-    font-size: 2.8em;
-    color: var(--cor01);
-    font-variant: small-caps;
-    text-shadow: 1 1 2px rgba(0, 0, 0, 0.882);
+section {
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: auto;
 }
 
-h2 {
-    font-family: var(--fonte);
-    color: var(--cor01);
-    font-variant: small-caps;
-    font-size: 2.2em;
+h1, h2 {
+  color: #3cb371;
 }
 
 ul {
-  text-align: left;
-  margin-top: 20px;
+  margin-left: 20px;
 }
 
-ul li {
-  margin-bottom: 10px;
-  /* list-style-type: '\1F5F8\00A0\00A0'; */
-}
-
-.botao {
-  background-color: var(--cor01);
+.cta {
+  background-color: #3cb371;
   color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 15px 25px;
+  text-align: center;
   display: inline-block;
-  transition: background 0.3s ease;
+  margin: 20px auto;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
-.botao:hover {
-  background-color: var(--cor02);
+.faq {
+  background-color: #e7f8e7;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.imgprato {
-    display: block;
-    width: 800px;
-    height: 220px;
-    margin: 35px auto;
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  padding: 20px;
+  background-color: #dcdcdc;
 }
