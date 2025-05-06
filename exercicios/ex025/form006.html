@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset {
+            max-width: 400px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.46);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <fieldset>
+        <form action="cadastro .php" method="post">
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor" value="#000000"><br>
+            </p>
+            <p>
+                <label for="isat">Nível de Satisfação:</label>
+                <input type="range" name="satisfacao" id="isat" value="1" min="1" max="5" step="1" oninput="document.getElementById('rangeValue').textContent = this.value">
+                <span id="rangeValue">1</span>
+            </p>
+            <!-- Para utilizar o modo input type="file" precisa colocar o metodo no "POST" -->
+            <p>
+                <label for="ifoto">Foto do perfil:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
